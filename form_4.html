@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form-4</title>
+        <style>
+           *
+           {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+           }
+           body
+           {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background: #000;
+               font-family: sans-serif;
+           }
+           .container
+           {
+               position: relative;
+               color: #fff;
+               font-size: 17px;
+               border: 1px solid white;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               flex-wrap: wrap;
+               overflow: hidden;
+           }
+           .container .banner
+           {
+               position: relative;
+               width: 380px;
+               height: 250px;
+               left: -300px;
+               background: red;
+               margin: -90px;
+               transform: rotate(-50deg);
+               overflow: hidden;
+               z-index: -1;
+           }
+           .container .black_banner
+           {
+               position: relative;
+               width: 150px;
+               height: 30px;
+               left: -150px;
+               background: #000;
+               margin: -10px;
+               transform: rotate(-50deg);
+               z-index: 1;
+           }
+           .container .logo
+           {
+              position: relative;
+              width: 70px;
+              height: 35px;
+              left: -200px;
+              background: rgb(65, 0, 0);
+              font-size: 30px;
+              font-weight: 700;
+           }
+           .container .header
+           {
+               text-align: center;
+               font-size: 30px;
+               font-weight: 700;
+               margin-top: -30px;
+           }
+           .container .form
+           {
+               width: 100%;
+               padding: 20px;
+           }
+           .container .form input
+           {
+               width: 100%;
+               padding: 7px;
+               margin-bottom: 15px;
+               background: rgb(100, 100, 100);
+               color: #fff;
+               border: 1px solid #fff;
+           }
+           .container .form input:focus
+           {
+               outline: 1px solid #fff;
+           }
+           .container .form button
+           {
+               padding: 10px;
+               background: rgb(100, 100, 100);
+               color: #fff;
+               font-weight: 700;
+               opacity: 0.5;
+               cursor: pointer;
+               transition: 0.5s;
+               border: none;
+           }
+           .container .form button:hover
+           {
+                opacity: 1;
+           }
+           #checkbox
+           {
+               width: auto;
+               cursor: pointer;
+           }
+           .sub_header
+           {
+               padding-bottom: 10px;
+               font-size: 25px;
+               font-weight: 700;
+           }
+           .terms
+           {
+               text-decoration: underline;
+           }
+           .info
+           {
+               font-weight: 700;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="banner"></div>
+            <div class="black_banner"></div>
+            <div class="logo">
+                <p><span style="color: red;">X</span>VID</p>
+            </div>
+            <div class="header">
+                MEMBERS
+            </div>
+            <div class="form">
+                <form>
+                    <div class="sub_header">
+                        <span>Create a new account</span>
+                        <hr>
+                    </div>
+                    <table width="100%">
+                        <tr>
+                            <td class="info">Your email (login):</td>
+                            <td>
+                                <input type="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info">Profile name:</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info">Password:</td>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="info">Password again:</td>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        <input type="checkbox" id="checkbox"> By signing up, you agree to our 
+                        <span class="terms">Terms of service</span> and our <span class="terms">Privacy policy</span>.
+                    </p>
+                    <button type="submit"><em>Next</em></button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

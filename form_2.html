@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form-2</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+            }
+            .container
+            {
+                position: relative;
+                width: 400px;
+                background: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .container .header
+            {
+                color: #fff;
+                text-align: center;
+            }
+            .container .form
+            {
+                position: relative;
+                width: 100%;
+                padding: 30px 10px 40px 10px;
+            }
+            .container .form input
+            {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                background: #000;
+                border: 1px solid rgb(83, 83, 83);
+                color: #fff;
+            }
+            .container .form input:focus
+            {
+                outline: 1px solid rgb(119, 119, 119);
+            }
+            .container .form .btn
+            {
+                display: inline-flex;
+                color: #fff;
+            }
+            .container .form .btn button
+            {
+                padding: 10px;
+            }
+            #signup
+            {
+                border: none;
+                border-radius: 5px;
+                background: rgb(119, 119, 119);
+                color: #fff;
+                font-weight: 600;
+                opacity: 0.7;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            #signup:hover
+            {
+                opacity: 1;
+            }
+            #login
+            {
+                border: none;
+                text-decoration: none;
+                color: rgb(243, 161, 9);
+                font-weight: 600;
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="font-size: 40px;">Sign up for free</h1>
+                <p style="color: rgb(119, 119, 119);;">and enhance your experience</p>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Username (6+ characters)">
+                    <input type="password" placeholder="Password (6+ characters)">
+                    <div class="btn">
+                        <button type="submit" id="signup">Sign Up!</button>
+                        <span style="padding: 10px;">Or</span>
+                        <a href="#" id="login">Log in</a>
+                    </div>
+                </form>
+                <p style="color: #fff; padding-top: 10px; font-weight: 600;">By signing up, you agree to our <span style="color: rgb(243, 161, 9);font-weight: normal;">Terms and Conditions.</span></p>
+                <p style="color: rgb(243, 161, 9);;">Resend confirmation email</p>
+            </div>
+        </div>
+    </body>
+</html>

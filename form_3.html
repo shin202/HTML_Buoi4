@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form-3</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+            }
+            .container
+            {
+                position: relative;
+                width: 450px;
+                height: auto;
+                background: darkblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .container .form
+            {
+                position: relative;
+                width: 420px;
+                height: auto;
+                margin-bottom: 10px;
+                background: rgb(1, 1, 167);
+                border: 1px solid blue;
+                padding: 10px;
+            }
+            .container .form input
+            {
+                width: 100%;
+                padding: 5px;
+            }
+            .container .form textarea
+            {
+                width: 100%;
+                padding: 5px;
+            }
+            .container .btn
+            {
+               position: relative;
+               padding: 10px 10px 10px 0px;
+               width: 420px;
+            }
+            .container .btn button
+            {
+               border: 0.5px solid blue;
+               background: rgb(1, 1, 167);  
+               color: #fff;
+               padding: 5px;
+               cursor: pointer;
+            }
+            #cancel
+            {
+                border: none;
+                padding: 5px;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+            }
+            #send
+            {
+                border: 0.5px solid blue;
+                padding: 5px;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn">
+                <button>Load next 10 comments</button>
+                <button>Load all comments</button>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Your name (Optional)">
+                    <textarea placeholder="Write your message"></textarea>
+                    <div style="text-align: right;">
+                        <button type="reset" id="cancel">Cancel</button>
+                        <button type="submit" id="send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
